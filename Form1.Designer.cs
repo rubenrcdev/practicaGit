@@ -87,6 +87,7 @@
             // ordinario
             // 
             this.ordinario.AutoSize = true;
+            this.ordinario.Checked = true;
             this.ordinario.Location = new System.Drawing.Point(6, 21);
             this.ordinario.Name = "ordinario";
             this.ordinario.Size = new System.Drawing.Size(83, 20);
@@ -102,7 +103,6 @@
             this.urgente.Name = "urgente";
             this.urgente.Size = new System.Drawing.Size(73, 20);
             this.urgente.TabIndex = 7;
-            this.urgente.TabStop = true;
             this.urgente.Text = "urgente";
             this.urgente.UseVisualStyleBackColor = true;
             // 

@@ -28,9 +28,10 @@ namespace WindowsFormsApp1
             //Leo el telegrama
             textoTelegrama = txtTelegrama.Text;
             // telegrama urgente?
-            if (cbUrgente.Checked)
+
+            if (urgente.Checked)
                 tipoTelegrama = 'u';
-            else
+            else if(ordinario.Checked)
                 tipoTelegrama = 'o';
 
             //Obtengo el número de palabras que forma el telegrama 
