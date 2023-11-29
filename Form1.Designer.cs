@@ -30,10 +30,13 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.txtTelegrama = new System.Windows.Forms.TextBox();
-            this.cbUrgente = new System.Windows.Forms.CheckBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtPrecio = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.ordinario = new System.Windows.Forms.RadioButton();
+            this.urgente = new System.Windows.Forms.RadioButton();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -53,16 +56,6 @@
             this.txtTelegrama.Name = "txtTelegrama";
             this.txtTelegrama.Size = new System.Drawing.Size(615, 166);
             this.txtTelegrama.TabIndex = 1;
-            // 
-            // cbUrgente
-            // 
-            this.cbUrgente.AutoSize = true;
-            this.cbUrgente.Location = new System.Drawing.Point(84, 285);
-            this.cbUrgente.Name = "cbUrgente";
-            this.cbUrgente.Size = new System.Drawing.Size(91, 20);
-            this.cbUrgente.TabIndex = 2;
-            this.cbUrgente.Text = "¿Urgente?";
-            this.cbUrgente.UseVisualStyleBackColor = true;
             // 
             // label2
             // 
@@ -91,19 +84,53 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // ordinario
+            // 
+            this.ordinario.AutoSize = true;
+            this.ordinario.Location = new System.Drawing.Point(6, 21);
+            this.ordinario.Name = "ordinario";
+            this.ordinario.Size = new System.Drawing.Size(83, 20);
+            this.ordinario.TabIndex = 6;
+            this.ordinario.TabStop = true;
+            this.ordinario.Text = "Ordinario";
+            this.ordinario.UseVisualStyleBackColor = true;
+            // 
+            // urgente
+            // 
+            this.urgente.AutoSize = true;
+            this.urgente.Location = new System.Drawing.Point(131, 21);
+            this.urgente.Name = "urgente";
+            this.urgente.Size = new System.Drawing.Size(73, 20);
+            this.urgente.TabIndex = 7;
+            this.urgente.TabStop = true;
+            this.urgente.Text = "urgente";
+            this.urgente.UseVisualStyleBackColor = true;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.urgente);
+            this.groupBox1.Controls.Add(this.ordinario);
+            this.groupBox1.Location = new System.Drawing.Point(84, 259);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(210, 59);
+            this.groupBox1.TabIndex = 8;
+            this.groupBox1.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtPrecio);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.cbUrgente);
             this.Controls.Add(this.txtTelegrama);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -113,10 +140,12 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtTelegrama;
-        private System.Windows.Forms.CheckBox cbUrgente;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtPrecio;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.RadioButton ordinario;
+        private System.Windows.Forms.RadioButton urgente;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }
 
